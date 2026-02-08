@@ -4,6 +4,7 @@ use pocketflow_rs::ProcessState;
 pub enum MyState {
     Success,
     Failure,
+    Exit,
     Default,
 }
 
@@ -16,6 +17,7 @@ impl ProcessState for MyState {
         match self {
             MyState::Success => "success".to_string(),
             MyState::Failure => "failure".to_string(),
+            MyState::Exit => "exit".to_string(),
             MyState::Default => "default".to_string(),
         }
     }

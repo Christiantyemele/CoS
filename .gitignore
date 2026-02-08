@@ -93,3 +93,4 @@ coverage/
 
 # Rust build artifacts
 /target/
+knowledge.csv
